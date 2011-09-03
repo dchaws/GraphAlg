@@ -1,0 +1,25 @@
+David Haws
+www.davidhaws.net
+https://github.com/dchaws
+
+GraphAlg is a collection of graph algorithms initially developed for row
+generation for learning Bayesian networks using integer programming.
+
+Some functions include Tarjan's algorithm
+http://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm
+DFS to enumerate all directed cycles, function to return all paths between two
+nodes and a number of utility functions to work with adjacency graphs. The
+class cycleGenerator implements the algorithm in "A new way to enumerate cycles
+in graph" by Liu and Wang, which enumerates all directed cycles in increasing
+length. The benefit is that the algorithm can be terminated after outputting
+all cycles of a fixed length.
+
+The program listdircycles reads in an adjacency graph of the form
+
+<num node>
+<adjacency matrix>
+
+and outputs the directed cycles. Optionally a limit on the cycle size can
+be given on the command line. See listdircycles.cpp.
+
+See LICENSE for licensing details. 
